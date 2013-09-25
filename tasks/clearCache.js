@@ -61,7 +61,7 @@ module.exports = function (grunt) {
 			count += ( queue[key] = numbers.length );
 
 			numbers.forEach(function(v) {
-				url = options.url + data.basedir.replace(/{n}/g, v) + abspath;
+				url = options.url + data.basedir.replace(/{n}/g, v) + key;
 				http.get(url, function(res) {
 					if ( res.statusCode < 200 || res.statusCode > 299) { // Collect the fail request
 						fail.push(url + ' --- With statusCode:' + res.statusCode);
