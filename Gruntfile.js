@@ -31,14 +31,14 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
 	  clearcache: {
 //		  options: {
-//			  url: 'http://127.0.0.1/Pro/Wap/full.json?',
+//			  url: 'http://127.0.0.1/Pro/Wap/full.json?url=',
 //			  defaultN: '1-6'
 //		  },
 		  clear: {
-			  basedir: 'img{n}.cache.netease.com/apps/wap/',
+			  basedir: 'http://img{n}.cache.netease.com/apps/wap/',
 			  css: '2',
-			  js: '3',
-			  img: '2',
+			  js: '1,3',
+			  img: '1-5',
 			  localRoot: 'test/upload/'
 		  }
 	  },
